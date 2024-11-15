@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Share</title>
+
+    <style>
+        .item-H {
+            grid-area: header;
+            height: 10px;
+        }
+
+        .item-L {
+            grid-area: lside;
+            height: 550px;
+
+        }
+
+        .item-M {
+            grid-area: main;
+            height: 550px;
+
+        }
+
+        .item-F {
+            grid-area: footer;
+            height: 80px;
+        }
+
+        .gridcontainer {
+            display: grid;
+            grid-template-areas:
+                'header header header header header'
+                'lside main main main main'
+                'footer footer footer footer footer';
+
+            grid-gap: 5px;
+            padding: 10px;
+        }
+
+        .item {
+            background-color: rgb(192, 152, 146);
+            border: 2px solid rgb(255, 255, 255);
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        header {
+            background: url(image/background.jpg) no-repeat bottom fixed;
+            background-size: cover;
+            border: 2px solid black;
+            padding: 0px;
+            margin: 0px;
+            width: 93.7%;
+            height: 120px;
+            text-align: center;
+            font-size: 25px;
+            position: fixed;
+            top: 0px;
+            z-index: 2;
+        }
+
+        footer {
+            background: url(image/background.jpg)center;
+            background-size: cover;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 0px;
+            width: 98.4%;
+            height: 140px;
+            text-align: center;
+            font-size: 25px;
+
+
+        }
+
+        .p1 {
+            font-family: "Fantasy", "Lucida Handwriting";
+        }
+
+        input[type]:hover {
+            border: 2px solid blue;
+            outline: none;
+        }
+
+        html {
+            background: url(image/backgroundWEB.png) no-repeat center fixed;
+            background-size: cover;
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .polaroid {
+            width: 200px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="gridcontainer">
+        <header>
+
+            <img src="image/banner.png" alt="banner" style="max-width: 100%; height: 125px; float: left;">
+            <h1 class="p1" style="color: rgb(255, 255, 255); "> Angel &nbsp;Share </h1>
+
+
+
+        </header>
+        <div class="item-H item">
+            
+
+        </div>
+
+
+        <div class="item-L item">
+            <hr>
+            <h3>กลับหน้าหลัก</h3>
+            <a class="p1" href="index.html"><button style="font-size: 20px; color: blue;">คลิ๊ก!</button></a>
+            <hr>
+
+            <a href="index.html"><img class="polaroid" src="image/Blackoak.png" alt="alchohol"
+                    style="width: 105px; height: 250px; float:bottom"></a>
+
+        </div>
+
+
+        <div class="item-M item">
+
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>ลงทะเบียนสมาชิก</legend>
+                    <label for="Fistname" style="padding: 5px; margin: 5px 45px 5px 5px;">ชื่อ</label>
+                    <input type="Fistname" id="Fistname" name="User_name"
+                        style="margin: 15px 5px 5px 11px; padding: 5px;"><br>
+
+                    <label for="Lastname" style="padding: 5px; margin: 5px;">นามสกุล</label>
+                    <input type="Text" id="Lastname" name="Sur_name" style="margin: 5px; padding: 5px;"><br>
+
+                    <label for="BirthD">วันเกิด :</label>
+                    <input type="date" id="checkin" name="BirthD"><br>
+
+                    <p>เพศ : </p>
+                    <input type="radio" id="Male" name="Sex" value="Male">
+                    <label for="Male">เพศชาย</label>
+
+                    <input type="radio" id="Female" name="Sex" value="Fmale">
+                    <label for="Female">เพศหญิง</label>
+
+                    <input type="radio" id="other" name="Sex" value="other">
+                    <label for="other">อื่น ๆ</label><br><br>
+
+                    <label for="email">Email Address :</label>
+                    <input type="email" id="email" name="email">
+                    <br><br>
+                    <label for="address" style="text-align: left;">ที่อยู่จัดส่ง : </label><br><br>
+                    <textarea id="address" name="address" rows="4"
+                        cols="50">ที่อยู่สำหรับการจัดส่งสินค้า เช่น  30/4 Dawn Winery Mondstadt.</textarea>
+                    <br>
+
+                    <br>
+                    <input type="Submit" style="padding:5px 15px; margin:5px 100px;" value="สมัครสมาชิก">
+                </fieldset>
+            </form>
+
+
+        </div>
+
+
+        <div class="item-F">
+            <footer>
+                <address style="color: white;">
+                    30/4 Dawn Winery Mondstadt.<br>
+                    Phone: 097-264-5276<br>
+                    Email:Angle@Share.com<br>
+                    Line: @AngleShare
+
+                </address>
+
+            </footer>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

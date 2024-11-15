@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Share</title>
+
+    <style>
+        .item-H {
+            grid-area: header;
+            height: 20px;
+        }
+
+        .item-L {
+            grid-area: lside;
+            height: 930px;
+        }
+
+        .item-M {
+            grid-area: main;
+            height:930px;
+        }
+
+        .item-F {
+            grid-area: footer;
+            height: 80px;
+        }
+
+        .gridcontainer {
+            display: grid;
+            grid-template-areas:
+                'header header header header header'
+                'lside main main main main'
+                'footer footer footer footer footer';
+
+            grid-gap: 5px;
+            padding: 0px;
+            
+        }
+
+        .item {
+            background-color: rgb(192, 152, 146);
+            border: 2px solid rgb(255, 255, 255);
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        header {
+            background: url(image/background.jpg) no-repeat bottom fixed;
+            background-size: cover;
+            border: 2px solid black;
+            padding: 0px;
+            margin: 0px;
+            width: 94.9%;
+            height: 120px;
+            text-align: center;
+            font-size: 25px;
+            position: fixed;
+            top: 0px;
+            z-index: 2;
+        }
+
+        footer {
+            background: url(image/background.jpg)center;
+            background-size: cover;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 0px;
+            width: 98.4%;
+            height: 140px;
+            text-align: center;
+            font-size: 25px;
+
+
+        }
+
+        .p1 {
+            font-family: "Fantasy", "Lucida Handwriting";
+        }
+
+        table,
+        th,
+        td {
+            border: 5px solid rgb(192, 152, 146);
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+
+        .polaroid {
+            width: 200px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+        }
+        input[type]:hover {
+            border: 2px solid blue;
+            outline: none;
+        }
+        html {
+            background: url(image/backgroundWEB.png) no-repeat center fixed;
+            background-size: cover;
+
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="gridcontainer">
+        <header>
+            
+            <img src="image/banner.png" alt="banner"
+            style="max-width: 100%; height: 125px; float: left;">
+            <h1 class="p1" style="color: rgb(255, 255, 255); "> Angel &nbsp;Share </h1>
+      
+    </header>
+        <div class="item-H item">
+          
+        </div>
+
+
+        <div class="item-L item">
+            <hr>
+            <h3>สมัครสมาชิก</h3>
+            <a class="p1" href="register.html" ><button style="font-size: 20px; color: red;">คลิ๊ก!</button></a>
+<hr>
+
+
+
+        </div>
+
+
+        <div class="item-M item">
+
+            <form action="https://httpbin.org/post" method="post">
+                <h3 class="p1">สินค้า Angel Share</h3>
+                <p>กรุณาเลือกสินค้าที่ท่านต้องการ</p>
+
+                <table class="col-xl-3">
+
+                    <tr>
+                        <td class="polaroid"><img src="image/Bandicoot-Chardonnay.png" alt="Bandicoot-Chardonnay NV"
+                                style="width: 50%;"><br>
+                            <input type="checkbox" id="Bandicoot Chardonnay NV" name="wine_type"
+                                value="Bandicoot Chardonnay NV">
+                            <label for="wine">Bandicoot Chardonnay NV 550฿</label>
+
+                            <input type="number" name="Bandicoot Chardonnay NV" min="1" max="99"></select>
+                        </td>
+
+                        <td class="polaroid"><img src="image/Blackoak.png" alt="Black Oak Chardonnay NV"
+                                style="width: 50%;"><br>
+                            <input type="checkbox" id="Black Oak Chardonnay NV" name="wine_type"
+                                value="Black Oak Chardonnay NV">
+                            <label for="wine">Black Oak Chardonnay NV <br>1,550฿</label>
+
+                            <input type="number" name="Black Oak Chardonnay NV" min="1" max="99"></select>
+                        </td>
+
+                        <td class="polaroid"><img src="image/ROBERT-SIRUGUE.png"
+                                alt="Domaine Robert Sirugue Bourgogne Passetoutgrains Pinot Noir Rose 2022"
+                                style="width: 50%;"><br>
+                            <input type="checkbox"
+                                id="Domaine Robert Sirugue Bourgogne Passetoutgrains Pinot Noir Rose 2022"
+                                name="wine_type"
+                                value="BDomaine Robert Sirugue Bourgogne Passetoutgrains Pinot Noir Rose 2022">
+                            <label for="wine">Robert Sirugue <br><br> 2,300฿ </label>
+
+                            <input type="number"
+                                name="Domaine Robert Sirugue Bourgogne Passetoutgrains Pinot Noir Rose 2022" min="1"
+                                max="99"></select>
+                        </td>
+                        <td class="polaroid"><img src="image/Tosti-Pink-Moscato.png" alt="Tosti Pink Moscato Sparkling"
+                                style="width: 50%;"><br>
+                            <input type="checkbox" id="Tosti Pink Moscato Sparkling" name="wine_type"
+                                value="Tosti Pink Moscato Sparkling">
+                            <label for="wine">Tosti Pink Moscato Sparkling <br>990฿</label>
+
+                            <input type="number" name="Tosti Pink Moscato Sparkling" min="1" max="99"></select>
+                        </td>
+
+
+                        <td class="polaroid"><img src="image/La-fleur-de-bouard.png" alt="La Fluer de Bouard 2016"
+                                style="width: 50%;"><br>
+                            <input type="checkbox" id="La Fluer de Bouard 2016" name="wine_type"
+                                value="La Fluer de Bouard 2016">
+                            <label for="wine">La Fluer de Bouard 2016 <br>2,150฿</label>
+
+                            <input type="number" name="La Fluer de Bouard 2016" min="1" max="99"></select>
+                        </td>
+
+                        <td class="polaroid"><img src="image/montelvini-prosecco-treviso.png"
+                                alt="Montelvini Prosecco Treviso DOC Brut" style="width: 50%;"><br>
+                            <input type="checkbox" id="Montelvini Prosecco Treviso DOC Brut" name="wine_type"
+                                value="Montelvini Prosecco Treviso DOC Brut">
+                            <label for="wine">Montelvini Prosecco Treviso DOC Brut <br>990฿ </label>
+
+                            <input type="number" name="Montelvini Prosecco Treviso DOC Brut" min="1" max="99"></select>
+                        </td>
+
+
+                    </tr>
+
+
+
+                    <td class="polaroid"><img src="image/Ruinart-Rose.png" alt="Ruinart Rose" style="width: 50%;"><br>
+                        <input type="checkbox" id="Ruinart Rose" name="wine_type" value="Ruinart Rose">
+                        <label for="wine">Ruinart Rose <br><br>5,150฿</label>
+
+                        <input type="number" name="Ruinart Rose" min="1" max="99"></select>
+                    </td>
+
+                    <td class="polaroid"><img src="image/Kabenet-troken.png"
+                            alt="Scholoss Lieser Riesling Kabinett 2018" style="width: 50%;"><br>
+                        <input type="checkbox" id="Scholoss Lieser Riesling Kabinett 2018" name="wine_type"
+                            value="Scholoss Lieser Riesling Kabinett 2018">
+                        <label for="wine">Scholoss Lieser Riesling Kabinett 2018 <br>1,690฿</label>
+
+                        <input type="number" name="Scholoss Lieser Riesling Kabinett 2018" min="1" max="99"></select>
+                    </td>
+
+
+
+                    <td class="polaroid"><img src="image/veuve-clicquot.png" alt="Veuve Clicquot Brut NV"
+                            style="width: 50%;"><br>
+                        <input type="checkbox" id="Veuve Clicquot Brut NV" name="wine_type"
+                            value="Veuve Clicquot Brut NV">
+                        <label for="wine">Veuve Clicquot Brut NV <br>1,690฿</label>
+
+                        <input type="number" name="Veuve Clicquot Brut NV" min="1" max="99"></select>
+                    </td>
+                    <td class="polaroid"><img src="image/Montes-limited.png"
+                            alt="Montes Limited Selection Cabernet Carmenere 2021" style="width: 50%;"><br>
+                        <input type="checkbox" id="Montes Limited Selection Cabernet Carmenere 2021" name="wine_type"
+                            value="Montes Limited Selection Cabernet Carmenere 2021">
+                        <label for="wine">Montes Limited Selection Cabernet Carmenere 2021 <br>1,190฿</label>
+
+                        <input type="number" name="Montes Limited Selection Cabernet Carmenere 2021" min="1"
+                            max="99"></select>
+                    </td>
+                    <td class="polaroid"><img
+                            src="image/Kapcsandy-Family-Winery-Napa-Valley-Endre-Bordeaux-Blend-2010.png"
+                            alt="Kapcsandy Family Winery Napa Valley Endre Bordeaux-Blend-2010" style="width: 50%;"><br>
+                        <input type="checkbox" id="Kapcsandy Family Winery Napa Valley Endre Bordeaux-Blend-2010"
+                            name="wine_type" value="Kapcsandy Family Winery Napa Valley Endre Bordeaux-Blend-2010">
+                        <label for="wine">Kapcsandy Family Winery Napa Valley Endre Bordeaux-Blend-2010 <br>
+                            4,650฿</label>
+
+                        <input type="number" name="Kapcsandy Family Winery Napa Valley Endre Bordeaux-Blend-2010"
+                            min="1" max="99"></select>
+                    </td>
+
+                    <td class="polaroid"><img src="image/Von-Winning.png"
+                            alt="Von Winning Deidesheimer Paradiesgarten Riesling, Troken Qualitatswein 2016"
+                            style="width: 50%;"><br>
+                        <input type="checkbox" id="Ruinart Rose" name="wine_type"
+                            value="Von Winning Deidesheimer Paradiesgarten Riesling, Troken Qualitatswein 2016">
+                        <label for="wine">Von Winning Deidesheimer Paradiesgarten Riesling, Troken Qualitatswein 2016
+                            <br>1,650฿</label>
+
+                        <input type="number"
+                            name="Von Winning Deidesheimer Paradiesgarten Riesling, Troken Qualitatswein 2016" min="1"
+                            max="99"></select>
+                    </td>
+
+                </table><br><br>
+                <input type="Submit" style="padding:5px 15px; margin:5px 100px;" value="ส่งข้อมูล">
+
+        </div>
+
+
+        <div class="item-F">
+            <footer>
+                <address style="color: white;" >
+                    30/4 Dawn Winery Mondstadt.<br>
+                    Phone: 097-264-5276<br>
+                    Email:Angle@Share.com<br>
+                    Line: @AngleShare
+
+                </address>
+
+            </footer>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
